@@ -1,0 +1,445 @@
+*,::after,::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: bottom;
+}
+button{
+    cursor: pointer;
+}
+:disabled{
+    cursor: not-allowed;
+}
+@font-face {
+    font-family: ubuntu bold;
+    src: url(./fonts/ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: ubuntu medium;
+    src: url(./fonts/ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: ubuntu regular;
+    src: url(./fonts/ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: raleway bold;
+    src: url(./fonts/Raleway/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: raleway;
+    src: url(./fonts/Raleway/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: raleway regular;
+    src: url(./fonts/Raleway/Raleway-Regular.ttf);
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.wrap-1{
+    height: 1970px;
+    background: url(../images/bg-1.png) no-repeat ,#e3ecc2 ;
+    background-position-x: center;
+
+}
+.anim{
+    animation: slide-right 2s linear ;
+}
+@keyframes slide-right {
+    0%{
+        transform: skew(40deg) translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+nav{
+    padding-top: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slide-left 1s linear ;
+}
+@keyframes slide-left {
+    0%{
+        transform: skew(20deg) translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    margin-right: 30px;
+    padding: 10px;
+    color: #fff;
+    font-family: ubuntu medium;
+    font-size: 25px;
+}
+nav ul li a:hover{
+    color: #f2ce94;
+}
+.text{
+    text-align: center;
+    padding-top: 140px;
+}
+.text h1{
+    font-size: 102.97px;
+    font-family: ubuntu bold;
+    color: #fff;
+}
+.text p{
+    font-size: 25px;
+    color: #fff;
+    font-family: ubuntu medium;
+    padding-top: 65px;
+}
+.popular{
+    padding-top: 400px;
+    text-align: center;
+}
+.popular h2{
+    font-size: 47.59px;
+    font-family: ubuntu bold;
+    color: #7287ae;
+}
+.item{
+    padding-top: 105px;
+    display: flex;
+    justify-content: space-between;
+}
+.disc{
+    height: 228px;
+    width: 340px;
+    background-color: #fff;
+    padding-left: 30px;
+    padding-top: 26px;
+}
+.disc h2{
+    font-family: ubuntu bold;
+    font-size: 33.33px;
+    color: #504f4f;
+}
+.disc p{
+    font-family: ubuntu medium;
+    font-size: 23px;
+    padding-top: 30px;
+    color: #504f4f;
+}
+.disc .price{
+    font-family: ubuntu bold;
+    font-size: 27.95px;
+    padding-top: 30px;
+    color: #504f4f;
+}
+.btn {
+    margin-top: 100px;
+    text-align: center;
+}
+.btn .btn-1{
+    background-color: #7287ae;
+    height: 75px;
+    width: 330px;
+    font-family: ubuntu medium;
+    font-size: 23.15px;
+    color: #fff;
+    border: none;
+    letter-spacing: 3px;
+    border-radius: 50px;
+    animation: slide 0.8s linear ;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+.btn-1:hover{
+    width: 500px;
+    background-color: #f2ce94;
+    color: #7287ae;
+    transition: all 0.5s linear;
+    box-shadow: 2px 2px 3px 4px ;
+    text-shadow: 4px 3px 4px ;
+}
+
+/* wrap-2 start here  */
+.wrap-2{
+    height: 730px ;
+    background: url(../images/food-1.jpg) no-repeat center;
+    background-position-x: 0%;
+}
+.food-item{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.food-text{
+    width: 50%;
+    margin-left: 700px;
+    margin-top: 215px;
+}
+.food-text h2{
+    font-family: ubuntu bold;
+    font-size: 58.33px;
+    color: #333;
+}
+.food-text p{
+    font-family: ubuntu regular;
+    font-size: 25px;
+    color: #333;
+    padding-top: 60px;
+}
+.food-text .btn-2{
+    margin-top: 60px;
+    background-color: #7287ae;
+    height: 75px;
+    width: 330px;
+    font-family: ubuntu medium;
+    font-size: 23.15px;
+    color: #fff;
+    border: none;
+    letter-spacing: 3px;
+    border-radius: 50px;
+}
+.btn-2:hover{
+    width: 500px;
+    background-color: #f2ce94;
+    color: #7287ae;
+    transition: all 0.5s linear;
+    box-shadow: 2px 2px 3px 4px ;
+    text-shadow: 4px 3px 4px ;
+}
+
+/* wrap-3 */
+
+.wrap-3{
+    height: 730px;
+    background: url(../images/food-4.png) no-repeat center;
+    background-position-x: 114.50%;
+    
+}
+.food-item-1{
+    display: flex;
+    /* justify-content: right; */
+    margin-left: 75px;
+}
+
+.text1{
+    width: 50%;
+    margin-top: 215px;
+}
+.text1 h2{
+    font-family: ubuntu bold;
+    font-size: 58.33px;
+    color: #333;
+}
+.text1 p{
+    font-family: ubuntu regular;
+    font-size: 25px;
+    color: #333;
+    padding-top: 60px;
+}
+.text1 .btn-2{
+    margin-top: 60px;
+    background-color: #7287ae;
+    height: 75px;
+    width: 330px;
+    font-family: ubuntu medium;
+    font-size: 23.15px;
+    color: #fff;
+    border: none;
+    letter-spacing: 3px;
+    border-radius: 50px;
+}
+.text1 .btn-2:hover{
+    width: 500px;
+    background-color: #f2ce94;
+    color: #7287ae;
+    transition: all 0.5s linear;
+    box-shadow: 2px 2px 3px 4px ;
+    text-shadow: 4px 3px 4px ;
+}
+
+/* wrap-4 start  */
+
+.wrap-4{
+    height: 655px;
+    background-color: #7287ae;
+}
+.order{
+    text-align: center;
+    padding-top: 100px;
+}
+.order h2{
+    font-family: ubuntu bold;
+    font-size: 47.59px;
+    color: #fff;
+}
+.order-item{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.order-list {
+    text-align: center;
+    
+}
+
+/* .circle{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding-top: 25%;
+    font-family: ubuntu bold;
+    font-size: 45.66px;
+    border-radius: 50%;
+    color: #7287ae;
+} */
+.order-list img{
+    border-radius: 50%;
+}
+.order-text{
+    padding-top: 60px;
+}
+.order-text h2{
+    font-family: ubuntu bold;
+    font-size: 45.66px;
+    color: #fff;
+}
+.order-text p{
+    padding-top: 40px;
+    font-family: ubuntu regular;
+    font-size: 19px;
+    color: #fff;
+}
+
+/* wrap-5 start here  */
+
+.wrap-5{
+    background: url(../images/back-2.png) center no-repeat;
+    height: 630px;
+}
+.delivery{
+    text-align: center;
+    padding-top: 135px;
+}
+.delivery h1{
+    font-family: ubuntu bold;
+    font-size: 80.67px;
+    color: #7287ae;
+}
+.delivery p{
+   font-family: raleway ;
+   font-size: 29.17px;
+   padding-top: 70px;
+   color: #7287ae;
+}
+.btn-3{
+    margin-top: 60px;
+    background-color: #7287ae;
+    height: 98px;
+    width: 440px;
+    font-family: ubuntu medium;
+    font-size: 30.56px;
+    color: #fff;
+    border: none;
+    letter-spacing: 3px;
+    border-radius: 50px;
+}
+
+.btn-3:hover{
+    width: 500px;
+    background-color: #f2ce94;
+    color: #7287ae;
+    transition: all 0.5s linear;
+    box-shadow: 2px 2px 3px 4px ;
+    text-shadow: 4px 3px 4px ;
+}
+.wrap-6{
+    height: 1140px;
+    background: url(../images/bg-2.png) no-repeat center,#e3ecc2 ;
+    background-position-y: bottom;
+}
+.qoute{
+    text-align: center;
+    padding-top: 107px;
+}
+.qoute p{
+    font-family: raleway ;
+    font-size: 29.17px;
+    padding-top: 65px;
+    color: #7287ae;
+}
+.qoute h2{
+    font-family: ubuntu bold;
+    font-size: 41.67px;
+    color: #7287ae;
+    padding-top: 60px;
+}
+.social{
+    padding-top: 90px;
+}
+.social a{
+    display: inline-block;
+    background-color: #7287ae;
+    font-size: 25px;
+    line-height: 50px;
+    width: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 312px;
+}
+.foot h2{
+    color: #fff;
+    font-family: mr;
+    font-size: 33.33px;
+}
+.foot p{
+    font-family: mr;
+    font-size: 25px;
+    color: #fff;
+    padding-top: 44px;
+}
+.foot ul {
+    margin-top: 10px;
+    
+    
+}
+ .foot ul li{
+     font-family: mr;
+     font-size: 25px;
+     color: #fff;
+     padding-top: 10px;
+ } 
+ .foot ul li a{
+     color: white;
+ }
+ .foot ul li a:hover{
+     color: #e8631c;
+ }
